@@ -43,68 +43,63 @@
             
   <div class="section" id="welcome-to-django-test-project-s-documentation">
 <h1>Welcome to Django Test Project&#8217;s documentation!<a class="headerlink" href="#welcome-to-django-test-project-s-documentation" title="Permalink to this headline">¶</a></h1>
-<p>Contents:</p>
-<div class="toctree-wrapper compound">
-<ul class="simple">
-</ul>
-</div>
 </div>
 <div class="section" id="django-project">
 <h1>Django Project<a class="headerlink" href="#django-project" title="Permalink to this headline">¶</a></h1>
 <p>A test project for django.</p>
+<div class="section" id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Django <tt class="docutils literal"><span class="pre">&gt;=1.7.x</span></tt>.</li>
+<li>Python <tt class="docutils literal"><span class="pre">3</span></tt></li>
+</ul>
+</div>
+<div class="section" id="credits">
+<h2>Credits<a class="headerlink" href="#credits" title="Permalink to this headline">¶</a></h2>
+<p>Some of the example models came from the original <a class="reference external" href="https://github.com/django-admin-bootstrapped/django-admin-bootstrapped">django-admin-bootstrapped</a>
+project - namely the <tt class="docutils literal"><span class="pre">TestMe</span></tt> model.</p>
+</div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>Simple install into a virtualenv for testing and evaluation:</p>
 <div class="highlight-python"><div class="highlight"><pre>$ git clone https://github.com/darrylcousins/django-project.git
 $ cd django-project
-$ python setup.py develop
 </pre></div>
 </div>
 </div>
-<div class="section" id="credits">
-<h2>Credits<a class="headerlink" href="#credits" title="Permalink to this headline">¶</a></h2>
-<p>Some of the example models came from the original <a class="reference external" href="https://github.com/django-admin-bootstrapped/django-admin-bootstrapped">django-admin-bootstrapped</a>
-project - namely the</p>
-</div>
-<div class="section" id="run-tests">
-<h2>Run Tests<a class="headerlink" href="#run-tests" title="Permalink to this headline">¶</a></h2>
-<p>Run the tests:</p>
-<div class="highlight-python"><div class="highlight"><pre>$ python runtests.py
-</pre></div>
-</div>
-</div>
-<div class="section" id="build-and-run-test-project">
-<h2>Build and Run Test Project<a class="headerlink" href="#build-and-run-test-project" title="Permalink to this headline">¶</a></h2>
-<p>The test project uses <a class="reference external" href="&lt;https://github.com/dyve/django-bootstrap3&gt;">django-bootstrap3</a> and <a class="reference external" href="&lt;https://github.com/darrylcousins/django-admin-bootstrapped3&gt;">bootstrapped3</a> admin.  these extra
-packages can be installed with:</p>
+<div class="section" id="build-test-project">
+<h2>Build Test Project<a class="headerlink" href="#build-test-project" title="Permalink to this headline">¶</a></h2>
+<p>The test project uses <a class="reference external" href="&lt;https://github.com/dyve/django-bootstrap3&gt;">django-bootstrap3</a> and <a class="reference external" href="&lt;https://github.com/darrylcousins/django-admin-bootstrapped3&gt;">bootstrapped3</a> admin along with
+<a class="reference external" href="https://www.djangoproject.com/">django 1.7</a>.  these extra packages can be
+installed with:</p>
 <div class="highlight-python"><div class="highlight"><pre>$ pip install -r requirements.txt
 </pre></div>
 </div>
+</div>
+<div class="section" id="run-test-project">
+<h2>Run Test Project<a class="headerlink" href="#run-test-project" title="Permalink to this headline">¶</a></h2>
 <p>The test project has some tests:</p>
 <div class="highlight-python"><div class="highlight"><pre>$ python manage.py test project
 </pre></div>
 </div>
 <p>The tables, static and sample data can be installed with:</p>
-<div class="highlight-python"><div class="highlight"><pre>$ python manage.py collectstatic
-$ python manage.py migrate
+<div class="highlight-python"><div class="highlight"><pre>$ python manage.py migrate
 $ python manage.py loaddata project/fixtures/project.json
+$ python manage.py collectstatic
 </pre></div>
 </div>
 <p>And can be run with:</p>
-<div class="highlight-python"><div class="highlight"><pre>$ python project/manage.py runserver 9000
+<div class="highlight-python"><div class="highlight"><pre>$ python project/manage.py runserver &lt;port&gt;
 </pre></div>
 </div>
 <p>There are no urls beyond the admin screens and api json views. It attempts to
-demonstrate the autocomplete widgets.</p>
-</div>
-</div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+demonstrate the autocomplete widgets. Login to the admin with <tt class="docutils literal"><span class="pre">admin:admin</span></tt>.
+Each of the models demonstrate a different aspect of the <a class="reference external" href="&lt;https://github.com/darrylcousins/django-admin-bootstrapped3&gt;">bootstrapped3</a> admin
+and <a class="reference external" href="&lt;https://github.com/darrylcousins/django-autocomplete&gt;">django-autocomplete</a> packages.</p>
 <ul class="simple">
-<li><a class="reference internal" href="genindex.html"><em>Index</em></a></li>
-<li><a class="reference internal" href="py-modindex.html"><em>Module Index</em></a></li>
 <li><a class="reference internal" href="search.html"><em>Search Page</em></a></li>
 </ul>
+</div>
 </div>
 
 
@@ -117,13 +112,13 @@ demonstrate the autocomplete widgets.</p>
   <ul>
 <li><a class="reference internal" href="#">Welcome to Django Test Project&#8217;s documentation!</a></li>
 <li><a class="reference internal" href="#django-project">Django Project</a><ul>
-<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#requirements">Requirements</a></li>
 <li><a class="reference internal" href="#credits">Credits</a></li>
-<li><a class="reference internal" href="#run-tests">Run Tests</a></li>
-<li><a class="reference internal" href="#build-and-run-test-project">Build and Run Test Project</a></li>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#build-test-project">Build Test Project</a></li>
+<li><a class="reference internal" href="#run-test-project">Run Test Project</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
 </ul>
 
   <h3>This Page</h3>
