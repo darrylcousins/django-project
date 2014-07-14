@@ -179,7 +179,6 @@ class TestMeAdmin(admin.ModelAdmin):
             'classes': ('collapse',),
             'fields': (
                 'test_int',
-                'test_img',
                 'test_file',
                 'test_date',
                 'test_char',

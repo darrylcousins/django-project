@@ -3,6 +3,12 @@ Django Project
 
 A test project for django.
 
+Requirements
+------------
+
+-  Django ``>=1.7.x``.
+-  Python ``3``
+
 Installation
 ------------
 
@@ -46,10 +52,10 @@ The tables, static and sample data can be installed with::
 
 And can be run with::
 
-    $ python project/manage.py runserver 9000
+    $ python project/manage.py runserver <port>
 
 There are no urls beyond the admin screens and api json views. It attempts to
-demonstrate the autocomplete widgets.
+demonstrate the autocomplete widgets. Login to the admin with ``admin:admin``.
 
 .. _bootstrapped3: <https://github.com/darrylcousins/django-admin-bootstrapped3>
 .. _django-bootstrap3: <https://github.com/dyve/django-bootstrap3>
