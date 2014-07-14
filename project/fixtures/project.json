@@ -2,191 +2,200 @@
 {
   "model": "project.documentation",
   "fields": {
-    "created": "2014-07-12T00:07:37.695Z",
     "modified": "2014-07-12T00:07:37.695Z",
-    "name": "Doc for NZ"
+    "name": "Doc for NZ",
+    "created": "2014-07-12T00:07:37.695Z"
   },
   "pk": 1
 },
 {
   "model": "project.documentation",
   "fields": {
-    "created": "2014-07-12T00:08:16.011Z",
     "modified": "2014-07-12T00:08:16.011Z",
-    "name": "Doc for Chch"
+    "name": "Doc for Chch",
+    "created": "2014-07-12T00:08:16.011Z"
   },
   "pk": 2
 },
 {
   "model": "project.documentation",
   "fields": {
-    "created": "2014-07-12T00:08:36.604Z",
     "modified": "2014-07-12T00:08:36.604Z",
-    "name": "Doc for Jade"
+    "name": "Doc for Jade",
+    "created": "2014-07-12T00:08:36.604Z"
   },
   "pk": 3
 },
 {
   "model": "project.documentation",
   "fields": {
-    "created": "2014-07-12T00:09:20.570Z",
     "modified": "2014-07-12T00:09:20.571Z",
-    "name": "Doc for Jade, Chch"
+    "name": "Doc for Jade, Chch",
+    "created": "2014-07-12T00:09:20.570Z"
   },
   "pk": 4
 },
 {
   "model": "project.documentation",
   "fields": {
-    "created": "2014-07-12T00:10:17.987Z",
     "modified": "2014-07-12T00:10:17.987Z",
-    "name": "Doc for Jade-Chch join"
+    "name": "Doc for Jade-Chch join",
+    "created": "2014-07-12T00:10:17.987Z"
   },
   "pk": 5
 },
 {
   "model": "project.documentation",
   "fields": {
-    "created": "2014-07-12T00:20:45.106Z",
     "modified": "2014-07-12T00:20:45.106Z",
-    "name": "Doc for EQC"
+    "name": "Doc for EQC",
+    "created": "2014-07-12T00:20:45.106Z"
   },
   "pk": 6
 },
 {
   "model": "project.documentation",
   "fields": {
-    "created": "2014-07-12T00:21:18.862Z",
     "modified": "2014-07-12T00:21:18.862Z",
-    "name": "Doc for EQC-Chch join"
+    "name": "Doc for EQC-Chch join",
+    "created": "2014-07-12T00:21:18.862Z"
   },
   "pk": 7
 },
 {
   "model": "project.documentation",
   "fields": {
-    "created": "2014-07-12T00:22:37.880Z",
     "modified": "2014-07-12T00:22:37.880Z",
-    "name": "Doc for London"
+    "name": "Doc for London",
+    "created": "2014-07-12T00:22:37.880Z"
   },
   "pk": 8
 },
 {
+  "model": "project.documentation",
+  "fields": {
+    "modified": "2014-07-14T02:14:24.518Z",
+    "name": "Doc for MC - Chch join",
+    "created": "2014-07-14T02:14:24.518Z"
+  },
+  "pk": 9
+},
+{
   "model": "project.country",
   "fields": {
-    "created": "2014-07-10T22:33:36.883Z",
     "modified": "2014-07-10T22:33:36.883Z",
     "documentation": [],
-    "name": "USA"
+    "name": "USA",
+    "created": "2014-07-10T22:33:36.883Z"
   },
   "pk": 1
 },
 {
   "model": "project.country",
   "fields": {
-    "created": "2014-07-10T22:33:36.893Z",
     "modified": "2014-07-10T22:33:36.893Z",
     "documentation": [],
-    "name": "England"
+    "name": "England",
+    "created": "2014-07-10T22:33:36.893Z"
   },
   "pk": 2
 },
 {
   "model": "project.country",
   "fields": {
-    "created": "2014-07-10T22:33:36.895Z",
     "modified": "2014-07-12T00:07:40.305Z",
     "documentation": [
       1
     ],
-    "name": "New Zealand"
+    "name": "New Zealand",
+    "created": "2014-07-10T22:33:36.895Z"
   },
   "pk": 3
 },
 {
   "model": "project.organisation",
   "fields": {
-    "created": "2014-07-10T22:33:36.916Z",
     "modified": "2014-07-10T22:33:36.916Z",
     "documentation": [],
-    "name": "Microsoft"
+    "name": "Microsoft",
+    "created": "2014-07-10T22:33:36.916Z"
   },
   "pk": 1
 },
 {
   "model": "project.organisation",
   "fields": {
-    "created": "2014-07-10T22:33:36.917Z",
     "modified": "2014-07-10T22:33:36.917Z",
     "documentation": [],
-    "name": "Apple"
+    "name": "Apple",
+    "created": "2014-07-10T22:33:36.917Z"
   },
   "pk": 2
 },
 {
   "model": "project.organisation",
   "fields": {
-    "created": "2014-07-10T22:33:36.918Z",
     "modified": "2014-07-10T22:33:36.918Z",
     "documentation": [],
-    "name": "White Lodge"
+    "name": "White Lodge",
+    "created": "2014-07-10T22:33:36.918Z"
   },
   "pk": 3
 },
 {
   "model": "project.organisation",
   "fields": {
-    "created": "2014-07-10T22:33:36.919Z",
     "modified": "2014-07-10T22:33:36.919Z",
     "documentation": [],
-    "name": "Black Lodge"
+    "name": "Black Lodge",
+    "created": "2014-07-10T22:33:36.919Z"
   },
   "pk": 4
 },
 {
   "model": "project.organisation",
   "fields": {
-    "created": "2014-07-12T00:08:42.124Z",
     "modified": "2014-07-12T00:08:42.124Z",
     "documentation": [
       3
     ],
-    "name": "Jade"
+    "name": "Jade",
+    "created": "2014-07-12T00:08:42.124Z"
   },
   "pk": 5
 },
 {
   "model": "project.organisation",
   "fields": {
-    "created": "2014-07-12T00:20:47.522Z",
     "modified": "2014-07-12T00:20:47.522Z",
     "documentation": [
       6
     ],
-    "name": "EQC"
+    "name": "EQC",
+    "created": "2014-07-12T00:20:47.522Z"
   },
   "pk": 7
 },
 {
   "model": "project.organisation",
   "fields": {
-    "created": "2014-07-12T00:21:58.147Z",
     "modified": "2014-07-12T00:21:58.147Z",
     "documentation": [],
-    "name": "Maintain Canterbury"
+    "name": "Maintain Canterbury",
+    "created": "2014-07-12T00:21:58.147Z"
   },
   "pk": 8
 },
 {
   "model": "project.town",
   "fields": {
+    "documentation": [],
+    "name": "Redmond",
+    "created": "2014-07-10T22:33:36.896Z",
     "modified": "2014-07-10T22:33:36.896Z",
     "sister_towns": [
       2
     ],
-    "documentation": [],
-    "created": "2014-07-10T22:33:36.896Z",
-    "name": "Redmond",
     "country": 1
   },
   "pk": 1
@@ -194,14 +203,15 @@
 {
   "model": "project.town",
   "fields": {
+    "documentation": [],
+    "name": "Cupertino",
+    "created": "2014-07-10T22:33:36.897Z",
     "modified": "2014-07-10T22:33:36.898Z",
     "sister_towns": [
       1,
-      3
+      3,
+      5
     ],
-    "documentation": [],
-    "created": "2014-07-10T22:33:36.897Z",
-    "name": "Cupertino",
     "country": 1
   },
   "pk": 2
@@ -209,14 +219,14 @@
 {
   "model": "project.town",
   "fields": {
+    "documentation": [],
+    "name": "Twin Peaks",
+    "created": "2014-07-10T22:33:36.899Z",
     "modified": "2014-07-10T22:33:36.899Z",
     "sister_towns": [
       2,
       4
     ],
-    "documentation": [],
-    "created": "2014-07-10T22:33:36.899Z",
-    "name": "Twin Peaks",
     "country": 1
   },
   "pk": 3
@@ -224,15 +234,16 @@
 {
   "model": "project.town",
   "fields": {
-    "modified": "2014-07-12T00:22:39.914Z",
-    "sister_towns": [
-      3
-    ],
     "documentation": [
       8
     ],
-    "created": "2014-07-10T22:33:36.900Z",
     "name": "London",
+    "created": "2014-07-10T22:33:36.900Z",
+    "modified": "2014-07-12T00:22:39.914Z",
+    "sister_towns": [
+      3,
+      5
+    ],
     "country": 2
   },
   "pk": 4
@@ -240,11 +251,14 @@
 {
   "model": "project.town",
   "fields": {
-    "modified": "2014-07-12T00:22:03.667Z",
-    "sister_towns": [],
     "documentation": [],
-    "created": "2014-07-10T22:33:36.901Z",
     "name": "Christchurch",
+    "created": "2014-07-10T22:33:36.901Z",
+    "modified": "2014-07-14T02:14:27.028Z",
+    "sister_towns": [
+      2,
+      4
+    ],
     "country": 3
   },
   "pk": 5
@@ -253,11 +267,11 @@
   "model": "project.organisationtown",
   "fields": {
     "town": 1,
-    "modified": "2014-07-10T22:33:36.920Z",
     "documentation": [],
+    "joined": "2014-07-10",
     "created": "2014-07-10T22:33:36.920Z",
-    "organisation": 1,
-    "joined": "2014-07-10"
+    "modified": "2014-07-10T22:33:36.920Z",
+    "organisation": 1
   },
   "pk": 1
 },
@@ -265,11 +279,11 @@
   "model": "project.organisationtown",
   "fields": {
     "town": 2,
-    "modified": "2014-07-10T22:33:36.922Z",
     "documentation": [],
+    "joined": "2014-07-10",
     "created": "2014-07-10T22:33:36.922Z",
-    "organisation": 2,
-    "joined": "2014-07-10"
+    "modified": "2014-07-10T22:33:36.922Z",
+    "organisation": 2
   },
   "pk": 2
 },
@@ -277,11 +291,11 @@
   "model": "project.organisationtown",
   "fields": {
     "town": 3,
-    "modified": "2014-07-10T22:33:36.923Z",
     "documentation": [],
+    "joined": "2014-07-10",
     "created": "2014-07-10T22:33:36.923Z",
-    "organisation": 3,
-    "joined": "2014-07-10"
+    "modified": "2014-07-10T22:33:36.923Z",
+    "organisation": 3
   },
   "pk": 3
 },
@@ -289,11 +303,11 @@
   "model": "project.organisationtown",
   "fields": {
     "town": 3,
-    "modified": "2014-07-10T22:33:36.925Z",
     "documentation": [],
+    "joined": "2014-07-10",
     "created": "2014-07-10T22:33:36.925Z",
-    "organisation": 4,
-    "joined": "2014-07-10"
+    "modified": "2014-07-10T22:33:36.925Z",
+    "organisation": 4
   },
   "pk": 4
 },
@@ -301,13 +315,13 @@
   "model": "project.organisationtown",
   "fields": {
     "town": 5,
-    "modified": "2014-07-12T00:10:21.480Z",
     "documentation": [
       5
     ],
+    "joined": "2014-07-12",
     "created": "2014-07-12T00:10:21.480Z",
-    "organisation": 5,
-    "joined": "2014-07-12"
+    "modified": "2014-07-14T02:14:02.240Z",
+    "organisation": 5
   },
   "pk": 5
 },
@@ -315,13 +329,13 @@
   "model": "project.organisationtown",
   "fields": {
     "town": 5,
-    "modified": "2014-07-12T00:21:22.135Z",
     "documentation": [
       7
     ],
+    "joined": "2014-07-12",
     "created": "2014-07-12T00:21:22.135Z",
-    "organisation": 7,
-    "joined": "2014-07-12"
+    "modified": "2014-07-14T02:14:02.271Z",
+    "organisation": 7
   },
   "pk": 6
 },
@@ -329,29 +343,107 @@
   "model": "project.organisationtown",
   "fields": {
     "town": 5,
-    "modified": "2014-07-12T00:22:03.694Z",
-    "documentation": [],
+    "documentation": [
+      9
+    ],
+    "joined": "2014-07-12",
     "created": "2014-07-12T00:22:03.694Z",
-    "organisation": 8,
-    "joined": "2014-07-12"
+    "modified": "2014-07-14T02:14:27.061Z",
+    "organisation": 8
   },
   "pk": 8
 },
 {
+  "model": "project.taggeditem",
+  "fields": {
+    "modified": "2014-07-13T23:26:20.967Z",
+    "object_id": 2,
+    "content_type": 9,
+    "created": "2014-07-13T23:12:45.762Z",
+    "tag": "closed"
+  },
+  "pk": 1
+},
+{
+  "model": "project.taggeditem",
+  "fields": {
+    "modified": "2014-07-14T01:15:51.354Z",
+    "object_id": 2,
+    "content_type": 8,
+    "created": "2014-07-14T00:26:56.129Z",
+    "tag": "awesome"
+  },
+  "pk": 2
+},
+{
+  "model": "project.testme",
+  "fields": {
+    "test_img": "",
+    "test_text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+    "test_char": "\u00ae\u2020",
+    "test_positive_small_int": 45,
+    "test_url": "http://example.com/",
+    "test_ip": "127.0.0.1",
+    "test_bool": true,
+    "test_decimal": "45.9",
+    "test_float": 54.65,
+    "test_int": -234,
+    "test_positive_integer": 456,
+    "test_small_int": -23,
+    "test_file": "",
+    "test_bigint": 1234413244444,
+    "test_slug": "lorem_dolor",
+    "test_email": "l.dolor@example.com",
+    "test_filepath": "",
+    "test_nullbool": true,
+    "test_time": "14:15:25",
+    "test_comma_separated_int": "45,23,57",
+    "test_date": "2014-07-14"
+  },
+  "pk": 1
+},
+{
+  "model": "project.testsortable",
+  "fields": {
+    "test_char": "\u00df\u0192\u00a9",
+    "position": 0,
+    "that": 1
+  },
+  "pk": 1
+},
+{
+  "model": "project.testsortable",
+  "fields": {
+    "test_char": "\u2206\u00ac\u00f8",
+    "position": 2,
+    "that": 1
+  },
+  "pk": 2
+},
+{
+  "model": "project.testsortable",
+  "fields": {
+    "test_char": "\u0153\u03c0\u00b5",
+    "position": 1,
+    "that": 1
+  },
+  "pk": 3
+},
+{
   "model": "auth.user",
   "fields": {
-    "is_active": true,
-    "password": "pbkdf2_sha256$12000$t4MitvGXwT1L$thrJzvV8F7iyAuaFDuvhXEYw152C9ePKCdJw8839NwA=",
-    "is_superuser": true,
-    "last_login": "2014-07-11T23:05:58.054Z",
-    "username": "admin",
-    "email": "admin@example.com",
     "groups": [],
-    "last_name": "",
-    "first_name": "",
+    "username": "admin",
     "is_staff": true,
+    "email": "admin@example.com",
+    "password": "pbkdf2_sha256$12000$t4MitvGXwT1L$thrJzvV8F7iyAuaFDuvhXEYw152C9ePKCdJw8839NwA=",
+    "is_active": true,
+    "last_name": "",
+    "is_superuser": true,
     "user_permissions": [],
-    "date_joined": "2014-07-10T22:34:18.219Z"
+    "date_joined": "2014-07-10T22:34:18.219Z",
+    "last_login": "2014-07-13T12:25:52.915Z",
+    "first_name": ""
   },
   "pk": 1
 }

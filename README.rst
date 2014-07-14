@@ -12,6 +12,13 @@ Simple install into a virtualenv for testing and evaluation::
     $ cd django-project
     $ python setup.py develop
 
+Credits
+-------
+
+Some of the example models came from the original `django-admin-bootstrapped
+<https://github.com/django-admin-bootstrapped/django-admin-bootstrapped>`_
+project - namely the 
+
 Run Tests
 ---------
 

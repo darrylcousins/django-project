@@ -9,9 +9,7 @@ import django
 
 DEFAULT_SETTINGS = dict(
     INSTALLED_APPS=(
-        'django.contrib.contenttypes',
         'project',
-        'project.tests',
         ),
     DATABASES={
         "default": {
@@ -27,7 +25,7 @@ DEFAULT_SETTINGS = dict(
     )
 
 
-def runtests():
+def buildsphinx():
     if not settings.configured:
         settings.configure(**DEFAULT_SETTINGS)
 
@@ -38,34 +36,12 @@ def runtests():
     parent = os.path.dirname(os.path.abspath(__file__))
     sys.path.insert(0, parent)
 
-    try:
-        from django.test.runner import DiscoverRunner
-        runner_class = DiscoverRunner
-        test_args = ['project.tests']
-    except ImportError:
-        from django.test.simple import DjangoTestSuiteRunner
-        runner_class = DjangoTestSuiteRunner
-        test_args = ['tests']
+    from sphinx import main
+    source = os.path.join(parent, 'docs/source')
+    output = os.path.join(parent, 'docs/build/html')
 
-    do_coverage = False
-    if len(sys.argv) > 1:
-        if sys.argv[1] == 'coverage':
-            do_coverage = True
-
-    if do_coverage:
-        from coverage import coverage
-        cov = coverage(include='project/*')
-        cov.start()
-
-    failures = runner_class(
-        verbosity=1, interactive=True, failfast=False).run_tests(test_args)
-
-    if do_coverage:
-        cov.stop()
-        cov.report()
-
-    sys.exit(failures)
-
+    argv = ['-b html', source, output]
+    sys.exit(main(argv))
 
 if __name__ == '__main__':
-    runtests()
+    buildsphinx()

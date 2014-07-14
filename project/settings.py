@@ -15,6 +15,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
+# STATICFILES_DIRS = (
+#    os.path.join(BASE_DIR, 'static'),
+#    )
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
@@ -41,8 +44,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django_extensions',
     'debug_toolbar.apps.DebugToolbarConfig',
-
     'bootstrap3',
+    'django_autocomplete',
     'project',
 )
 
