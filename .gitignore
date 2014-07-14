@@ -9,7 +9,6 @@ __pycache__/
 .Python
 env/
 bin/
-build/
 develop-eggs/
 dist/
 eggs/
@@ -52,6 +51,4 @@ db.sqlite3
 *.log
 *.pot
 
-# Sphinx documentation
-docs/_build/
 
