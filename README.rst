@@ -1,4 +1,4 @@
-Django Project
+ujango Project
 ==============
 
 A test project for django.

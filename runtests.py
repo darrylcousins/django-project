@@ -24,6 +24,7 @@ DEFAULT_SETTINGS = dict(
         'django.contrib.sessions.middleware.SessionMiddleware',
         'django.contrib.auth.middleware.AuthenticationMiddlewarer'
         ),
+    AUTOCOMPLETE_PATH='api/filter'
     )
 
 
