@@ -1,17 +1,23 @@
 # django third party modules
 django-extensions>=1.3.7
 django-bootstrap3
+django-debug-toolbar
+
+https://www.djangoproject.com/download/1.7c1/tarball/
+
+-e git+https://github.com/darrylcousins/django-autocomplete.git#egg=django_autocomplete
+-e git+https://github.com/darrylcousins/django-admin-bootstrapped3.git#egg=django_admin_bootstrapped
 
 # quality control
-flake8>=2.1.0
-coverage
+#flake8>=2.1.0
+#coverage
 
 # better interpreter
-bpython
+#bpython
 
 # documentation
-sphinx
-docutils
+#sphinx
+#docutils
 
 # for django dates
 pytz

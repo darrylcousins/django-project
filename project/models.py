@@ -256,7 +256,6 @@ class TestMe(models.Model):
     test_ip = models.IPAddressField(help_text="Lorem dolor")
     test_url = models.URLField(help_text="Lorem dolor")
     test_int = models.IntegerField(help_text="Lorem dolor")
-    test_img = models.ImageField(upload_to='dummy', blank=True)
     test_file = models.FileField(upload_to='dummy', blank=True)
     test_date = models.DateField(help_text="Lorem dolor")
     test_char = models.CharField(max_length=50, help_text="Lorem dolor")
