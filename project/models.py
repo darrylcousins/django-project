@@ -9,11 +9,16 @@ from django_autocomplete.meta import AutocompleteMeta
 API_FILTER_PATH = 'api/filter'
 
 
-def get_autocomplete_meta(name):
-    return AutocompleteMeta(
-        name=name,
-        path='%s/%s' % (API_FILTER_PATH, name)
-        )
+class Autocomplete(object):
+
+  @property
+  def autocomplete(self):
+      name = self.__class__.__name__.lower()
+      return AutocompleteMeta(
+          name=name,
+          path='%s/%s' % (API_FILTER_PATH, name),
+          permissions=True
+          )
 
 
 class Timestamped(models.Model):
@@ -31,7 +36,7 @@ class Timestamped(models.Model):
         abstract = True
 
 
-class Base(models.Model):
+class Base(models.Model, Autocomplete):
     """
     The Base model, all models in the application share its attributes.
 
@@ -67,8 +72,6 @@ class Documentation(Base, Timestamped):
         >>> obj.delete()
 
     """
-    autocomplete = get_autocomplete_meta('documentation')
-
     class Meta:
         verbose_name_plural = 'Documentation'
 
@@ -106,8 +109,6 @@ class Country(Base, HasDoc, Timestamped):
         >>> obj.delete()
 
     """
-    autocomplete = get_autocomplete_meta('country')
-
     class Meta:
         verbose_name = 'Country'
         verbose_name_plural = 'Countries'
@@ -131,8 +132,6 @@ class Organisation(Base, HasDoc, Timestamped):
         >>> obj.delete()
 
     """
-    autocomplete = get_autocomplete_meta('organisation')
-
     class Meta:
         verbose_name = 'Organisation'
 
