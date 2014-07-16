@@ -27,7 +27,7 @@ Simple install into a virtualenv for testing and evaluation::
 Build Test Project
 ------------------
 
-The test project uses django-bootstrap3_ and bootstrapped3_ admin along with
+The test project uses `django-bootstrap3`_ and `bootstrapped3`_ admin along with
 `django 1.7 <https://www.djangoproject.com/>`_.  these extra packages can be
 installed with::
 
@@ -52,8 +52,8 @@ And can be run with::
 
 There are no urls beyond the admin screens and api json views. It attempts to
 demonstrate the autocomplete widgets. Login to the admin with ``admin:admin``.
-Each of the models demonstrate a different aspect of the bootstrapped3_ admin
-and django-autocomplete_ packages.
+Each of the models demonstrate a different aspect of the `bootstrapped3`_ admin
+and `django-autocomplete`_ packages.
 
 .. _bootstrapped3: <https://github.com/darrylcousins/django-admin-bootstrapped3>
 .. _django-autocomplete: <https://github.com/darrylcousins/django-autocomplete>
