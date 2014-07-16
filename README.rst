@@ -1,4 +1,4 @@
-ujango Project
+Django Project
 ==============
 
 A test project for django.
@@ -55,6 +55,6 @@ demonstrate the autocomplete widgets. Login to the admin with ``admin:admin``.
 Each of the models demonstrate a different aspect of the `bootstrapped3`_ admin
 and `django-autocomplete`_ packages.
 
-.. _bootstrapped3: <https://github.com/darrylcousins/django-admin-bootstrapped3>
-.. _django-autocomplete: <https://github.com/darrylcousins/django-autocomplete>
-.. _django-bootstrap3: <https://github.com/dyve/django-bootstrap3>
+.. _bootstrapped3: https://github.com/darrylcousins/django-admin-bootstrapped3
+.. _django-autocomplete: https://github.com/darrylcousins/django-autocomplete
+.. _django-bootstrap3: https://github.com/dyve/django-bootstrap3
