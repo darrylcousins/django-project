@@ -223,6 +223,9 @@ class OrganisationTown(HasDoc, Timestamped):
     class Meta:
         verbose_name = 'Organisation Town Join'
 
+    def __str__(self):
+        return '%s %s' % (self.town.name, self.organisation.name)
+
 
 class TaggedItem(Timestamped, models.Model):
     """

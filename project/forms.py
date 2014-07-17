@@ -22,10 +22,12 @@ class CountryForm(forms.ModelForm):
     towns = forms.ModelMultipleChoiceField(
         queryset=Town.objects.all(),
         widget=AutocompleteSelectMultipleWidget,
+        required=False,
         )
     documentation = forms.ModelMultipleChoiceField(
         queryset=Documentation.objects.all(),
         widget=AutocompleteSelectMultipleWidget,
+        required=False,
         )
 
     class Meta:
@@ -36,40 +38,30 @@ class CountryForm(forms.ModelForm):
     # data for 'towns' field
     def __init__(self, *args, **kwargs):
 
-        # Only in case we build the form from an instance
-        # (otherwise, 'towns' list should be empty)
         if 'instance' in kwargs:
             initial = kwargs.setdefault('initial', {})
 
-            # The widget for a ModelMultipleChoiceField expects
-            # a list of primary key for the selected data.
-            initial['towns'] = [t.pk for t in kwargs['instance'].town_set.all()]
+            if kwargs['instance']:
+                initial['towns'] = [t.pk for t in kwargs['instance'].town_set.all()]
+                initial['documentation'] = [t.pk for t in kwargs['instance'].documentation.all()]
 
         forms.ModelForm.__init__(self, *args, **kwargs)
 
-        rel = ManyToManyRel(self.instance.documentation.model, Country, 'documentation')
+        rel = ManyToManyRel(self._meta.model.documentation.field.rel.to, Country, 'documentation')
 
         # wrapping the widgets gives the field the `add` button
         self.fields['documentation'].widget = RelatedFieldWidgetWrapper(
             self.fields['documentation'].widget, rel, self.admin_site)
 
-        rel = ManyToOneRel(self.instance.town_set.model, Town, 'country')
+        rel = ManyToOneRel(self._meta.model.town_set.related, Town, 'country')
+
         self.fields['towns'].widget = RelatedFieldWidgetWrapper(
             self.fields['towns'].widget, rel, self.admin_site)
 
     def save(self, commit=True):
         instance = forms.ModelForm.save(self, False)
-
-        # clear will work if the ForeignKey has null=True and then the set can
-        # be replaced in bulk
-
-        # instance.town_set.clear()
-        # for town in self.cleaned_data['towns']:
-        #    instance.town_set.add(town)
+        instance.save()
         instance.town_set = self.cleaned_data['towns']
         instance.documentation = self.cleaned_data['documentation']
-
-        if commit:
-            instance.save()
-            self.save_m2m()
+        self.save_m2m()
         return instance

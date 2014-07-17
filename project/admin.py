@@ -56,23 +56,36 @@ class CountryInline(BaseInline):
 class TaggedItemInline(GenericTabularInline):
     model = TaggedItem
     extra = 0
+    verbose_name = 'Tag'
+    verbose_name_plural = '%ss' % verbose_name
 
 
 class BaseAdmin(admin.ModelAdmin):
     list_display = ['name', 'created', 'modified']
     search_fields = ['name']
     list_editable = ['name']
+    list_filter = ['created', 'modified']
     list_per_page = 10
     save_as = True
     date_hierarchy = 'created'
     fields = ['name', 'documentation']
     formfield_overrides = DEFAULT_FORMFIELD_OVERRIDES
 
+    def save_formset(self, request, form, formset, change):
+        instances = formset.save(commit=False)
+        for instance in instances:
+            instance.save()
+        super(BaseAdmin, self).save_formset(request, form, formset, change)
+        formset.save_m2m()
+
+        return form.save(commit=False)
+
 
 @admin.register(Documentation)
 class DocumentationAdmin(BaseAdmin):
     model = Documentation
     search_form = searchform_factory(Documentation)
+    search_fields = ['name']
     fields = ['name']
 
 
@@ -80,6 +93,7 @@ class DocumentationAdmin(BaseAdmin):
 class TownAdmin(BaseAdmin):
     model = Town
     search_form = searchform_factory(Town)
+    search_fields = ['name']
     fields = ['name', 'sister_towns', 'documentation']
     inlines = [
         OrganisationTownInline,
@@ -107,6 +121,7 @@ admin.site.register(Country, CountryAdmin)
 class OrganisationAdmin(BaseAdmin):
     model = Organisation
     search_form = searchform_factory(Organisation)
+    search_fields = ['name']
     inlines = [
         TownOrganisationInline,
         TaggedItemInline
@@ -118,6 +133,7 @@ class OrganisationTownAdmin(admin.ModelAdmin):
     model = OrganisationTown
     fields = ['organisation', 'town', 'joined', 'documentation']
     list_display = ['custom_name', 'created', 'modified']
+    search_fields = ['town__name', 'organisation__name']
     save_as = True
     date_hierarchy = 'created'
     search_form = searchform_factory(OrganisationTown)
@@ -131,6 +147,7 @@ class OrganisationTownAdmin(admin.ModelAdmin):
 @admin.register(TaggedItem)
 class TaggedItemAdmin(admin.ModelAdmin):
     model = TaggedItem
+    search_fields = ['tag']
     formfield_overrides = {
         models.ForeignKey: {'widget': AutocompleteCTWidget},
         }
@@ -144,7 +161,7 @@ class TestSortable(admin.TabularInline, SortableInline):
 
 @admin.register(TestMe)
 class TestMeAdmin(admin.ModelAdmin):
-    search_fields = ['test_int', ]
+    search_fields = ['test_ip', 'test_url', ]
     list_editable = ['test_int', ]
     list_filter = ['test_ip', 'test_url', 'test_int', ]
     list_per_page = 3
